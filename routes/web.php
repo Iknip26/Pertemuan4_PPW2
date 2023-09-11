@@ -1,21 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\tugas_controller;
 
+Route::get('/about', [tugas_controller::class, 'menuAbout']); 
+Route::get('/home', [tugas_controller::class, 'menuHome']); 
 
-Route::get('/home123', function () {
-    return view('home', [
-        "tittle" => "Home",
-        "name" => "hanif",
-        "email" => "hanif123@gmail.com"
-    ]);
-});
-
-Route::get('/about', function () {
-    return view('about', [
-        "tittle" => "About",
-        "name" => "hanif",
-        "email" => "hanif123@gmail.com"
-    ]);
-});
 ?>
