@@ -28,7 +28,7 @@ class tugas_controller extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //sncdis
     }
 
     /**
