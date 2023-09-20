@@ -1,9 +1,10 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\tugas_controller;
+use App\Http\Controllers\buku_controller;
 
-Route::get('/about', [tugas_controller::class, 'menuAbout']); 
-Route::get('/home', [tugas_controller::class, 'menuHome']); 
-
+// Pertemuan 5 ( model dan seeder )
+Route::get('/buku', [buku_controller::class, 'index']);
 ?>
